@@ -1,0 +1,77 @@
+{
+"name": "umair-nasir-portfolio",
+"version": 2,
+"builds": [
+    {
+    "src": "**/*.html",
+    "use": "@vercel/static"
+    },
+    {
+    "src": "css/**/*.css",
+    "use": "@vercel/static"
+    },
+    {
+    "src": "js/**/*.js",
+    "use": "@vercel/static"
+    }
+],
+"routes": [
+    {
+    "src": "/",
+    "dest": "/index.html"
+    },
+    {
+    "src": "/css/(.*)",
+    "dest": "/css/$1"
+    },
+    {
+    "src": "/js/(.*)",
+    "dest": "/js/$1"
+    },
+    {
+    "src": "/(.*)",
+    "dest": "/$1"
+    }
+],
+"headers": [
+    {
+    "source": "/(.*)",
+    "headers": [
+        {
+        "key": "X-Content-Type-Options",
+        "value": "nosniff"
+        },
+        {
+        "key": "X-Frame-Options",
+        "value": "DENY"
+        },
+        {
+        "key": "X-XSS-Protection",
+        "value": "1; mode=block"
+        },
+        {
+        "key": "Referrer-Policy",
+        "value": "strict-origin-when-cross-origin"
+        }
+    ]
+    },
+    {
+    "source": "/(.*\\.(jpg|jpeg|gif|png|svg|ico))",
+    "headers": [
+        {
+        "key": "Cache-Control",
+        "value": "public, max-age=31536000, immutable"
+        }
+    ]
+    },
+    {
+    "source": "/(.*\\.(css|js))",
+    "headers": [
+        {
+        "key": "Cache-Control",
+        "value": "public, max-age=31536000, immutable"
+        }
+    ]
+    }
+]
+}

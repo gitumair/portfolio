@@ -1,0 +1,9 @@
+# robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://umairnasir.dev/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /private/

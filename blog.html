@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Muhammad Umair Nasir | DevOps & Cloud Insights</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Read my latest articles on DevOps practices, cloud computing, Docker, Kubernetes, and digital forensics. Technical tutorials and industry insights.">
+    <meta name="keywords" content="DevOps Blog, Docker Tutorials, Kubernetes Guide, Cloud Computing, Digital Forensics Articles, CI/CD Best Practices">
+    <meta name="author" content="Muhammad Umair Nasir">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Blog - Muhammad Umair Nasir | DevOps & Cloud Insights">
+    <meta property="og:description" content="Technical articles on DevOps, Cloud, and Security">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://umairnasir.dev/blog.html">
+    
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Umair<span class="logo-dot">.</span></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 150px 0 80px; color: white; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; animation: fadeInUp 1s ease;">My Blog</h1>
+            <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto; animation: fadeInUp 1s ease 0.2s both;">Insights, tutorials, and thoughts on DevOps, Cloud, and Security</p>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section style="padding: 40px 0;">
+        <div class="container">
+            <div class="blog-categories" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="blog.html" class="category-link active" style="padding: 8px 20px; background: var(--primary-color); color: white; border-radius: 50px; text-decoration: none;">All Posts</a>
+                <a href="blog.html?category=devops" class="category-link" style="padding: 8px 20px; background: var(--light-color); color: var(--dark-color); border-radius: 50px; text-decoration: none;">DevOps</a>
+                <a href="blog.html?category=cloud" class="category-link" style="padding: 8px 20px; background: var(--light-color); color: var(--dark-color); border-radius: 50px; text-decoration: none;">Cloud</a>
+                <a href="blog.html?category=security" class="category-link" style="padding: 8px 20px; background: var(--light-color); color: var(--dark-color); border-radius: 50px; text-decoration: none;">Security</a>
+                <a href="blog.html?category=tutorials" class="category-link" style="padding: 8px 20px; background: var(--light-color); color: var(--dark-color); border-radius: 50px; text-decoration: none;">Tutorials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section style="padding: 20px 0 80px;">
+        <div class="container">
+            <div class="blog-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <!-- Blog Post 1 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://amalgjose.com/wp-content/uploads/2020/10/docker-security-banner-01.png" alt="Docker Security Blog">
+                        <span class="blog-category">DevOps</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Mar 15, 2024</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3>Docker Security Best Practices for Production</h3>
+                        <p>Learn essential security practices for containerized applications including image scanning, runtime security, and network policies...</p>
+                        <a href="pages/blog/docker-security.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*aLDyO7SZYKAaLMIg6uDSQQ.png" alt="Kubernetes Blog">
+                        <span class="blog-category">Cloud</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Feb 28, 2024</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h3>Kubernetes Cost Optimization: A Practical Guide</h3>
+                        <p>Discover strategies to reduce your Kubernetes cluster costs by up to 50% without sacrificing performance or reliability...</p>
+                        <a href="pages/blog/kubernetes-cost-optimization.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://www.datalab.co.nz/assets/entries/_small/COMPUTER-FORENSICS2.jpg" alt="Digital Forensics Blog">
+                        <span class="blog-category">Security</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Mar 2, 2026</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>Introduction to Cloud Forensics: Tools & Techniques</h3>
+                        <p>Explore the challenges and solutions for digital forensics in cloud environments, including evidence collection and analysis...</p>
+                        <a href="pages/blog/cloud-forensics.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://www.jenkins.io/images/jenkins-logo-title-black.png" alt="Jenkins CI/CD">
+                        <span class="blog-category">Tutorials</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Feb 10, 2026</span>
+                            <span><i class="far fa-clock"></i> 10 min read</span>
+                        </div>
+                        <h3>Complete Jenkins Pipeline Tutorial with Examples</h3>
+                        <p>Step-by-step guide to creating declarative pipelines, integrating with GitHub, and automating your build process...</p>
+                        <a href="pages/blog/jenkins-pipeline-tutorial.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://terraform.io/assets/images/og-image-8b3e4f7d.png" alt="Terraform">
+                        <span class="blog-category">Cloud</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Jan 25, 2026</span>
+                            <span><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3>Infrastructure as Code: Terraform Best Practices</h3>
+                        <p>Learn how to write maintainable Terraform code, manage state files, and implement modular infrastructure...</p>
+                        <a href="pages/blog/terraform-best-practices.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://prometheus.io/assets/prometheus_logo.png" alt="Prometheus Monitoring">
+                        <span class="blog-category">DevOps</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Jan 5, 2026</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>Setting Up Prometheus and Grafana for Kubernetes</h3>
+                        <p>Complete guide to monitoring your Kubernetes cluster with Prometheus and creating beautiful dashboards with Grafana...</p>
+                        <a href="pages/blog/prometheus-grafana-setup.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div style="display: flex; justify-content: center; gap: 10px; margin-top: 50px;">
+                <a href="#" style="padding: 10px 15px; background: var(--primary-color); color: white; border-radius: 5px; text-decoration: none;">1</a>
+                <a href="#" style="padding: 10px 15px; background: var(--light-color); color: var(--dark-color); border-radius: 5px; text-decoration: none;">2</a>
+                <a href="#" style="padding: 10px 15px; background: var(--light-color); color: var(--dark-color); border-radius: 5px; text-decoration: none;">3</a>
+                <span style="padding: 10px 15px;">...</span>
+                <a href="#" style="padding: 10px 15px; background: var(--light-color); color: var(--dark-color); border-radius: 5px; text-decoration: none;">10</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 0;">
+        <div class="container" style="text-align: center;">
+            <h2 style="font-size: 2rem; margin-bottom: 20px;">Subscribe to My Newsletter</h2>
+            <p style="margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">Get the latest articles on DevOps, Cloud, and Security delivered straight to your inbox.</p>
+            <form action="https://formspree.io/f/mzdalbad" method="POST" class="newsletter-form" style="max-width: 500px; margin: 0 auto; display: flex;">
+                <input type="email" name="email" placeholder="Your Email" required style="flex: 1; padding: 15px; border: none; border-radius: 50px 0 0 50px; font-family: inherit;">
+                <button type="submit" style="padding: 15px 30px; background: var(--dark-color); color: white; border: none; border-radius: 0 50px 50px 0; cursor: pointer; font-weight: 600;">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Umair<span>.</span></h2>
+                    <p>DevOps Engineer & Cloud Specialist</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html#skills">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to my newsletter for DevOps tips and articles</p>
+                    <form action="https://formspree.io/f/mzdalbad" method="POST" class="newsletter-form">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Muhammad Umair Nasir. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/gitumair"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammad-umair-nasir-700252248/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/m_umairnasir786"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-dev"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
